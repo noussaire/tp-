@@ -13,3 +13,9 @@ Avant cette capture, le fichier de configuration pointe vers la premiere impleme
 Avant cette deuxieme capture, le fichier de configuration pointe vers la deuxieme implementation DAO. Sans modifier la couche metier, le programme charge `DaoImpl2` dynamiquement et produit un resultat different.
 
 ![Capture d'execution avec DaoImpl2](docs/execution-daoimpl2.png)
+
+## Version finale
+
+Cette derniere capture montre la version finale du projet dans l'IDE. Le fichier `config.txt` contient `dao.DaoImpl2`, puis l'execution confirme le chargement dynamique de cette implementation avec le resultat final affiche dans le terminal.
+
+![Capture finale du projet](docs/execution-finale.png)
