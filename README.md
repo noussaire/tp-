@@ -2,8 +2,14 @@
 
 Ce projet illustre le chargement dynamique des classes avec l'API de reflexion Java. L'application lit les implementations a utiliser depuis un fichier de configuration, instancie les objets, puis injecte la dependance DAO dans la couche metier.
 
-Avant la capture ci-dessous, le projet a ete compile depuis le terminal. Ensuite, la classe principale `presentation.Presentation2` a ete executee pour verifier le chargement dynamique, l'injection de dependance et le calcul final.
+## Execution avec DaoImpl
 
-![Capture d'execution du TP](docs/execution.png)
+Avant cette capture, le fichier de configuration pointe vers la premiere implementation DAO. L'execution montre que le conteneur charge `DaoImpl`, injecte cette dependance dans le metier, puis affiche le resultat du calcul.
 
-La capture montre que le conteneur instancie correctement la classe DAO et la classe metier, puis execute le calcul. Dans la derniere version du projet, le resultat attendu est `400.0`.
+![Capture d'execution avec DaoImpl](docs/execution-daoimpl.png)
+
+## Execution avec DaoImpl2
+
+Avant cette deuxieme capture, le fichier de configuration pointe vers la deuxieme implementation DAO. Sans modifier la couche metier, le programme charge `DaoImpl2` dynamiquement et produit un resultat different.
+
+![Capture d'execution avec DaoImpl2](docs/execution-daoimpl2.png)
