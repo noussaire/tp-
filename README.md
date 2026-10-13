@@ -6,4 +6,4 @@ Avant la capture ci-dessous, le projet a ete compile depuis le terminal. Ensuite
 
 ![Capture d'execution du TP](docs/execution.png)
 
-La capture montre que le conteneur instancie correctement la classe DAO et la classe metier, puis execute le calcul avec le resultat attendu.
+La capture montre que le conteneur instancie correctement la classe DAO et la classe metier, puis execute le calcul. Dans la derniere version du projet, le resultat attendu est `400.0`.

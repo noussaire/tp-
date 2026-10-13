@@ -18,7 +18,7 @@ public class MetierImpl implements IMetier {
         }
 
         double valeurBase = dao.getValue();
-        double resultat = valeurBase * 2;
+        double resultat = valeurBase * 4;
 
         System.out.println("[METIER] Calcul effectue. Resultat : " + resultat);
         return resultat;
